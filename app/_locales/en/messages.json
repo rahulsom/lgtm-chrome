@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "LGTM",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "LGTM Extension for Google Chrome",
+    "description": "The description of the application"
+  }
+}
