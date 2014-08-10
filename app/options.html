@@ -10,14 +10,21 @@
         <!-- endbuild -->
     </head>
     <body>
-        <h1>'Allo, 'Allo!</h1>
-                
+        <h1><img src="images/icon.png" alt="" height="32px"/> LGTM.in Options</h1>
+        Custom List to use
+        <input type="text" name="username" value="" id="username">
+        <br>
+        <button id="save">Save</button>
+
+        <div id="status"></div>
+
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <!-- endbower -->
         <!-- endbuild -->
 
         <!-- build:js scripts/options.js -->
+        <script src="bower_components/jquery/jquery.min.js"></script>
         <script src="scripts/options.js"></script>
         <!-- endbuild -->
     </body>
