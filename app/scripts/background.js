@@ -11,7 +11,7 @@ chrome.browserAction.onClicked.addListener(function(tab){
         username: ''
     };
     chrome.storage.sync.get(defaults, function(items) {
-        var url = items.username ? 'http://www.lgtm.in/g/' + items.username : 'http://www.lgtm.in/g'
+        var url = items.username ? 'http://www.lgtm.in/g/' + items.username : 'http://www.lgtm.in/g';
         $.getJSON(url, function (data) {
             var msg = data.markdown;
             console.log ('Sending request...');
