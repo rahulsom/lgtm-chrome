@@ -5,7 +5,7 @@ console.log('LGTM Registering listener in contentscript...');
 
 chrome.extension.onRequest.addListener(function(request) {
     console.log('LGTM Listener invoked...');
-    $('textarea[name="comment[body]"]').append('\n\n' + request);
+    $('textarea[name="comment[body]"],textarea[name="pull_request_review[body]"]').append('\n\n' + request);
     console.log('... LGTM Applied to github');
 });
 
